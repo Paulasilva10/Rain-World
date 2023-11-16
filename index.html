@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>Rain World</title>
+</head>
+
+<body>
+   
+    <div class="videocat">
+        <video src="video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+        <img src="logo.avif" alt="logo rain" class="logo">
+        <p class="title" ></p>
+        <p>Você é um lesgato. O mundo a sua volta é cheio de ameaças e você deve encará-lo sozinho. Separado de sua família em uma inundação devastadora, você precisará encontrar comida e abrigo entre aguaceiros torrenciais assustadores, que ameaçam inundar toda forma de vida. Escale as ruínas de uma civilização antiga, fuja das garras de predadores cruéis e descubra novas terras repletas de criaturas estranhas e mistérios enterrados. Encontre sua família antes de virar a refeição de alguém!</p>
+        <button class="fale"  onclick="cliqueiNoBotao()">Fale conosco</button>
+    </div>
+
+    <img src="cat.png" alt="logo cat" class="cat">
+
+    <form class="fale-conosco">
+        <input placeholder="Seu nome" type="text">
+        <input placeholder="Seu telefone" type="tel">
+        <textarea placeholder="Digite aqui"></textarea>
+        <button onclick="sumirFormulario()">Enviar formulário</button>
+    </form>
+
+    <div class="mascara-form"></div>
+</body>
+
+<script>
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+
+    function cliqueiNoBotao(){
+        formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sumirFormulario(){
+        formulario.style.left = "-320px"
+        mascara.style.visibility = "hidden"
+    }
+
+</script>
+
+</html>
