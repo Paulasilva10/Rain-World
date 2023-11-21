@@ -55,7 +55,7 @@ p {
 button {
     height: 40px;
     width: 200px;
-    background: #748666;
+    background :black;
     border: solid 1px;
     border-color: #fff;
     border-radius: 4px;
@@ -63,13 +63,23 @@ button {
     margin-top: 20px;
     cursor: pointer;
     margin-left: 60px;
+    
 
 }
+
+button:hover {
+    border: solid 5px;
+    border-color: white ;
+  
+  }
+
+
 .fale{
     margin-left: 100px;
 }
 .fale-conosco {
-    background: #fff;
+    background: #000000;
+    border: solid 3px;
     display: flex;
     flex-direction: column;
     padding: 20px;
